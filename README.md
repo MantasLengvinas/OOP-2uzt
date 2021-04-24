@@ -98,15 +98,27 @@ ARBA
 | Dviejų konteinerių       | 0.0011s | 0.011s  | 0.139s    | 1.498s     |  30.419s     |
 | Skirtumas                | 0.0004s | 0.011s  | 0.116s    | 2.100s     |  20.762s     |
 
+## Programos spartos įvertinimas realizavus klases
+
+| ***Vector***                                     | 1 000      | 10 000   | 100 000   | 1 000 000   | 10 000 000   |
+| ------------------------------------------------ | ---------- | -------- | --------- | ----------- | ------------ |
+| **Laiko naudojimas**                             |            |          |           |             |              |
+| Struct realizacija                               | 0.011s     | 0.123s   | 1.113s    | 11.210s     |  96.666s     |
+| Class (Įprastas kompiliavimas)                   | 0.006s     | 0.081s   | 0.808s    |  8.879s     |  93.243s     |
+| Class (-O1 vėliavėlė)                            | 0.004s     | 0.055s   | 0.559s    |  6.260s     |  61.058s     |
+| Class (-O2 vėliavėlė)                            | 0.005s     | 0.061s   | 0.609s    |  6.150s     |  60.560s     |
+| Class (-O3 vėliavėlė)                            | 0.008s     | 0.094s   | 1.077s    |  9.272s     |  71.188s     |
+
 * Procesorius: Intel Core I5-9300H, 2.4 GHz
 * RAM: 8GB DDR4 2400MHz 
 * SSD: NVMe M.2
 	
 ## Versijos
 
-  * [v0.1](https://github.com/MantasLengvinas/OOP-2-uzd/releases/tag/v0.1) Įvykdyti v0.1 reikalavimai
-  * [v0.2](https://github.com/MantasLengvinas/OOP-2-uzd/releases/tag/v0.2) Įvykdyti v0.2 reikalavimai - galimybė skaityti iš failo
-  * [v0.3](https://github.com/MantasLengvinas/OOP-2-uzd/releases/tag/v0.3) Įvykdyti v0.3 reikalavimai - įdėti try catch blokai, programa išskaidyta į atskirus failus
-  * [v0.4](https://github.com/MantasLengvinas/OOP-2-uzd/releases/tag/v0.4) Įvykdyti v0.4 reikalavimai - failų generavimas, laiko analizė, studentų skirstymas pagal galutinį balą
-  * [v0.5](https://github.com/MantasLengvinas/OOP-2-uzd/releases/tag/v0.5) Įvykdyti v0.5 reikalavimai - programa gali saugoi duomenys 3 skirtinguose konteineriuose: list, deque ir vector
-  * [v1.0](https://github.com/MantasLengvinas/OOP-2-uzd/releases/tag/v1.0) Įvykdyti v1.0 reikalavimai - įdėtas partition optimizavimas, padaryti memory testai, bei sukurti makefile
+  * [v0.1](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v0.1) Įvykdyti v0.1 reikalavimai
+  * [v0.2](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v0.2) Įvykdyti v0.2 reikalavimai - galimybė skaityti iš failo
+  * [v0.3](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v0.3) Įvykdyti v0.3 reikalavimai - įdėti try catch blokai, programa išskaidyta į atskirus failus
+  * [v0.4](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v0.4) Įvykdyti v0.4 reikalavimai - failų generavimas, laiko analizė, studentų skirstymas pagal galutinį balą
+  * [v0.5](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v0.5) Įvykdyti v0.5 reikalavimai - programa gali saugoi duomenys 3 skirtinguose konteineriuose: list, deque ir vector
+  * [v1.0](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v1.0) Įvykdyti v1.0 reikalavimai - įdėtas partition optimizavimas, padaryti memory testai, bei sukurti makefile
+  * [v1.1](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v1.1) Įvykdyti v1.1 reikalavimai - struktūros pakeistos klasėmis

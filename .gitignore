@@ -9,6 +9,7 @@
 *.filters
 *.cmake
 *.sln
+/data
 
 # Prerequisites
 *.d
