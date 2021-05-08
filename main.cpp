@@ -44,7 +44,7 @@ int main(int argc, char* argv[]){
 
                         clockStart = std::chrono::steady_clock::now();
                         
-                        auto iterator = std::stable_partition(Students.begin(), Students.end(), _checkIfWinner);
+                        auto iterator = std::stable_partition(Students.begin(), Students.end(), _checkIfWinner());
                         std::vector<_student> vargsiukai(std::make_move_iterator(iterator), std::make_move_iterator(Students.end()));
                         Students.erase(iterator, Students.end());
 
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]){
 
                         clockStart = std::chrono::steady_clock::now();
 
-                        auto iterator = std::stable_partition(Students.begin(), Students.end(), _checkIfWinner);
+                        auto iterator = std::stable_partition(Students.begin(), Students.end(), _checkIfWinner());
                         std::deque<_student> vargsiukai(std::make_move_iterator(iterator), std::make_move_iterator(Students.end()));
                         std::sort(Students.begin(), Students.end(), _check);
                         std::sort(vargsiukai.begin(), vargsiukai.end(), _check);
@@ -90,7 +90,7 @@ int main(int argc, char* argv[]){
                         
                         clockStart = std::chrono::steady_clock::now();
 
-                        auto iterator = std::stable_partition(Students.begin(), Students.end(), _checkIfWinner);
+                        auto iterator = std::stable_partition(Students.begin(), Students.end(), _checkIfWinner());
                         std::list<_student> vargsiukai(std::make_move_iterator(iterator), std::make_move_iterator(Students.end()));
                         Students.sort(_check);
                         vargsiukai.sort(_check);

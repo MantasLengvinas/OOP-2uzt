@@ -21,9 +21,9 @@ bool doFileExist(string fileName) {
 	return f.good();
 }
 
-bool _checkIfWinner(_student s) {
-    return s.getAvg() >= 5;
-}
+// bool _checkIfWinner(_student s) {
+//     return s.getAvg() >= 5;
+// }
 
 void checkForInputFiles(vector<int> fsizes, double& timeElapsed) {
     for(int i = 0; i < fsizes.size(); i++){

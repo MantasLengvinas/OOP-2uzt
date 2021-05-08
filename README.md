@@ -122,3 +122,4 @@ ARBA
   * [v0.5](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v0.5) Įvykdyti v0.5 reikalavimai - programa gali saugoi duomenys 3 skirtinguose konteineriuose: list, deque ir vector
   * [v1.0](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v1.0) Įvykdyti v1.0 reikalavimai - įdėtas partition optimizavimas, padaryti memory testai, bei sukurti makefile
   * [v1.1](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v1.1) Įvykdyti v1.1 reikalavimai - struktūros pakeistos klasėmis
+  * [v1.2](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v1.2) Įvykdyti v1.2 reikalavimai - implementuota rule of three

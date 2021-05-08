@@ -35,7 +35,6 @@ static std::chrono::steady_clock::time_point clockStart;
 
 bool _check(_student &a, _student &b);
 bool _checkAvg(_student &a, _student &b);
-bool _checkIfWinner(_student s);
 void checkInput(char& choice);
 void checkInput(int &input);
 void readFile(vector<_student> &Students);
@@ -50,6 +49,12 @@ double calcMed(vector<int> hw);
 void addStudent(vector<_student> &Students);
 void outputMed(vector<_student> Students, string file);
 void outputAvg(vector<_student> Students, string file);
+
+struct _checkIfWinner {
+    inline bool operator() (const _student &s){
+        return (s.getAvg() >= 5);
+    }
+};
 
 template <class T> 
 void readSelectedFile(T& Students, string fileSize){
