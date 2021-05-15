@@ -1,19 +1,16 @@
 #ifndef StudentH
 #define StudentH
 
-class _student {
-    protected:
-        string fname, lname;
-
+class _student : public Person {
     private:
         int exam;
         vector<int> hw;
         double finalAvg, finalMed;
     
     public:
-        _student() : fname(""), lname(""), exam(0), finalAvg(0), finalMed(0) {}
-        _student(string fname, string lname, int exam, vector<int> hw, double finalAvg, double finalMed) : fname(fname), lname(lname), exam(exam), finalAvg(finalAvg), finalMed(finalMed) {}
-        _student(const _student &s) : fname(s.getFname()), lname(s.getLname()), exam(s.getExam()), finalAvg(s.getAvg()), finalMed(s.getMed()) {
+        _student() : exam(0), finalAvg(0), finalMed(0) {Person::fname = "", Person::lname = "";}
+        _student(string _fname, string _lname, int exam, vector<int> hw, double finalAvg, double finalMed) : exam(exam), finalAvg(finalAvg), finalMed(finalMed) {fname = _fname, lname = _lname;}
+        _student(const _student &s) : exam(s.getExam()), finalAvg(s.getAvg()), finalMed(s.getMed()) {
             hw.reserve(s.getHw().size());
 
             for(auto a : s.getHw()){

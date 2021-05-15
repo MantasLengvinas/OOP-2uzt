@@ -26,6 +26,7 @@ using std::endl;
 using std::string;
 using std::vector;
 
+#include "Person.hpp"
 #include "Student.hpp"
 
 const char file[] = "kursiokai.txt"; //Duomenu failo pavadinimas
