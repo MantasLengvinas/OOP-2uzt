@@ -1,0 +1,175 @@
+\doxysection{functions.\+cpp File Reference}
+\label{functions_8cpp}\index{functions.cpp@{functions.cpp}}
+{\ttfamily \#include \char`\"{}main.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::default\+\_\+random\+\_\+engine \textbf{ generator} (\textbf{ seed})
+\item 
+std\+::uniform\+\_\+real\+\_\+distribution$<$ double $>$ \textbf{ distribution} (1, 11)
+\item 
+bool \textbf{ \+\_\+check} (\textbf{ \+\_\+student} \&a, \textbf{ \+\_\+student} \&b)
+\item 
+bool \textbf{ \+\_\+check\+Avg} (\textbf{ \+\_\+student} \&a, \textbf{ \+\_\+student} \&b)
+\item 
+bool \textbf{ do\+File\+Exist} (string file\+Name)
+\item 
+void \textbf{ check\+For\+Input\+Files} (vector$<$ int $>$ fsizes, double \&time\+Elapsed)
+\item 
+void \textbf{ check\+Input} (char \&choice)
+\item 
+void \textbf{ check\+Input} (int \&input)
+\item 
+int \textbf{ Random\+Grade} ()
+\item 
+void \textbf{ generate\+Grades} (int n, vector$<$ int $>$ \&hw)
+\item 
+void \textbf{ generate\+Input\+File} (int n)
+\item 
+double \textbf{ calc\+Avg} (vector$<$ int $>$ hw, int egz)
+\item 
+double \textbf{ calc\+Med} (vector$<$ int $>$ hw)
+\item 
+void \textbf{ generate\+Directories} (std\+::string directory)
+\item 
+void \textbf{ read\+File} (vector$<$ \textbf{ \+\_\+student} $>$ \&Students)
+\item 
+string \textbf{ select\+File} ()
+\item 
+void \textbf{ add\+Student} (vector$<$ \textbf{ \+\_\+student} $>$ \&Students)
+\item 
+void \textbf{ output\+Avg} (vector$<$ \textbf{ \+\_\+student} $>$ Students, string \textbf{ file})
+\item 
+void \textbf{ output\+Med} (vector$<$ \textbf{ \+\_\+student} $>$ Students, string \textbf{ file})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \textbf{ seed} = std\+::chrono\+::system\+\_\+clock\+::now().time\+\_\+since\+\_\+epoch().count()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{functions_8cpp_ac6996eafbd7c8cc140f69bee042c30c4}} 
+\index{functions.cpp@{functions.cpp}!\_check@{\_check}}
+\index{\_check@{\_check}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\_check()}
+{\footnotesize\ttfamily bool \+\_\+check (\begin{DoxyParamCaption}\item[{\textbf{ \+\_\+student} \&}]{a,  }\item[{\textbf{ \+\_\+student} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_acba84033bcc7a2b17f1ba0e9b0ec8966}} 
+\index{functions.cpp@{functions.cpp}!\_checkAvg@{\_checkAvg}}
+\index{\_checkAvg@{\_checkAvg}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\_checkAvg()}
+{\footnotesize\ttfamily bool \+\_\+check\+Avg (\begin{DoxyParamCaption}\item[{\textbf{ \+\_\+student} \&}]{a,  }\item[{\textbf{ \+\_\+student} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_afd502d70735c46b1ea479b2bdc29851a}} 
+\index{functions.cpp@{functions.cpp}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{addStudent()}
+{\footnotesize\ttfamily void add\+Student (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$ \&}]{Students }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a2d0cefbae65b76d62d711a013e19b940}} 
+\index{functions.cpp@{functions.cpp}!calcAvg@{calcAvg}}
+\index{calcAvg@{calcAvg}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{calcAvg()}
+{\footnotesize\ttfamily double calc\+Avg (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{hw,  }\item[{int}]{egz }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_af8a991478a41571841d890e769f5fe80}} 
+\index{functions.cpp@{functions.cpp}!calcMed@{calcMed}}
+\index{calcMed@{calcMed}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{calcMed()}
+{\footnotesize\ttfamily double calc\+Med (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{hw }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a4bde48b4e743231f20a69d1dd248df87}} 
+\index{functions.cpp@{functions.cpp}!checkForInputFiles@{checkForInputFiles}}
+\index{checkForInputFiles@{checkForInputFiles}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{checkForInputFiles()}
+{\footnotesize\ttfamily void check\+For\+Input\+Files (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{fsizes,  }\item[{double \&}]{time\+Elapsed }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_ade43cf5506e4195a8f75ecdcb915d4ee}} 
+\index{functions.cpp@{functions.cpp}!checkInput@{checkInput}}
+\index{checkInput@{checkInput}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{checkInput()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void check\+Input (\begin{DoxyParamCaption}\item[{char \&}]{choice }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a5ca02c6d463971a74fbc907b5e875214}} 
+\index{functions.cpp@{functions.cpp}!checkInput@{checkInput}}
+\index{checkInput@{checkInput}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{checkInput()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void check\+Input (\begin{DoxyParamCaption}\item[{int \&}]{input }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_ae4ac36fb4ce84d2cb5921d0eca1359c1}} 
+\index{functions.cpp@{functions.cpp}!distribution@{distribution}}
+\index{distribution@{distribution}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{distribution()}
+{\footnotesize\ttfamily std\+::uniform\+\_\+real\+\_\+distribution$<$double$>$ distribution (\begin{DoxyParamCaption}\item[{1}]{,  }\item[{11}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a2eca5f7687e3b86a3e98fc0c9ae67fc9}} 
+\index{functions.cpp@{functions.cpp}!doFileExist@{doFileExist}}
+\index{doFileExist@{doFileExist}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{doFileExist()}
+{\footnotesize\ttfamily bool do\+File\+Exist (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_ac44e8dd207d8182a0b95632aa38e39d7}} 
+\index{functions.cpp@{functions.cpp}!generateDirectories@{generateDirectories}}
+\index{generateDirectories@{generateDirectories}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{generateDirectories()}
+{\footnotesize\ttfamily void generate\+Directories (\begin{DoxyParamCaption}\item[{std\+::string}]{directory }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_ad0013ffb14fc5f37ee91a175bca84e21}} 
+\index{functions.cpp@{functions.cpp}!generateGrades@{generateGrades}}
+\index{generateGrades@{generateGrades}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{generateGrades()}
+{\footnotesize\ttfamily void generate\+Grades (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{vector$<$ int $>$ \&}]{hw }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_abea16f91036dfc0eb2c058286012cd52}} 
+\index{functions.cpp@{functions.cpp}!generateInputFile@{generateInputFile}}
+\index{generateInputFile@{generateInputFile}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{generateInputFile()}
+{\footnotesize\ttfamily void generate\+Input\+File (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a7739f9a14ee87e088af1af3ba2bdada3}} 
+\index{functions.cpp@{functions.cpp}!generator@{generator}}
+\index{generator@{generator}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{generator()}
+{\footnotesize\ttfamily std\+::default\+\_\+random\+\_\+engine generator (\begin{DoxyParamCaption}\item[{\textbf{ seed}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a77876d082e4ca7282a3d64f38b76fe2d}} 
+\index{functions.cpp@{functions.cpp}!outputAvg@{outputAvg}}
+\index{outputAvg@{outputAvg}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{outputAvg()}
+{\footnotesize\ttfamily void output\+Avg (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$}]{Students,  }\item[{string}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_ab27bec76a263f90ff77e3cab0212e78e}} 
+\index{functions.cpp@{functions.cpp}!outputMed@{outputMed}}
+\index{outputMed@{outputMed}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{outputMed()}
+{\footnotesize\ttfamily void output\+Med (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$}]{Students,  }\item[{string}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_ab463ec33cf8b1a7f6bbe9c7b7738e4c1}} 
+\index{functions.cpp@{functions.cpp}!RandomGrade@{RandomGrade}}
+\index{RandomGrade@{RandomGrade}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{RandomGrade()}
+{\footnotesize\ttfamily int Random\+Grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_a07a39fbd0948cffc17a2de22789d1328}} 
+\index{functions.cpp@{functions.cpp}!readFile@{readFile}}
+\index{readFile@{readFile}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{readFile()}
+{\footnotesize\ttfamily void read\+File (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$ \&}]{Students }\end{DoxyParamCaption})}
+
+\mbox{\label{functions_8cpp_afb484766fb78523e8f8457ad2269c18a}} 
+\index{functions.cpp@{functions.cpp}!selectFile@{selectFile}}
+\index{selectFile@{selectFile}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{selectFile()}
+{\footnotesize\ttfamily string select\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{functions_8cpp_abb3c5a016eb55b340002c5da33a16714}} 
+\index{functions.cpp@{functions.cpp}!seed@{seed}}
+\index{seed@{seed}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{seed}
+{\footnotesize\ttfamily unsigned seed = std\+::chrono\+::system\+\_\+clock\+::now().time\+\_\+since\+\_\+epoch().count()}
+

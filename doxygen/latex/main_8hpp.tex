@@ -1,0 +1,229 @@
+\doxysection{main.\+hpp File Reference}
+\label{main_8hpp}\index{main.hpp@{main.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$io.\+h$>$}\newline
+{\ttfamily \#include $<$direct.\+h$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include \char`\"{}Person.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Student.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}catch.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ \+\_\+check\+If\+Winner}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ \+\_\+check} (\textbf{ \+\_\+student} \&a, \textbf{ \+\_\+student} \&b)
+\item 
+bool \textbf{ \+\_\+check\+Avg} (\textbf{ \+\_\+student} \&a, \textbf{ \+\_\+student} \&b)
+\item 
+void \textbf{ check\+Input} (char \&choice)
+\item 
+void \textbf{ check\+Input} (int \&input)
+\item 
+void \textbf{ read\+File} (vector$<$ \textbf{ \+\_\+student} $>$ \&Students)
+\item 
+void \textbf{ generate\+Directories} (std\+::string directory)
+\item 
+void \textbf{ generate\+Grades} (int n, vector$<$ int $>$ \&arr)
+\item 
+void \textbf{ generate\+Input\+File} (int n)
+\item 
+void \textbf{ check\+For\+Input\+Files} (vector$<$ int $>$ fsizes, double \&time\+Elapsed)
+\item 
+string \textbf{ select\+File} ()
+\item 
+double \textbf{ calc\+Avg} (vector$<$ int $>$ hw, int egz)
+\item 
+double \textbf{ calc\+Med} (vector$<$ int $>$ hw)
+\item 
+void \textbf{ add\+Student} (vector$<$ \textbf{ \+\_\+student} $>$ \&Students)
+\item 
+void \textbf{ output\+Med} (vector$<$ \textbf{ \+\_\+student} $>$ Students, string \textbf{ file})
+\item 
+void \textbf{ output\+Avg} (vector$<$ \textbf{ \+\_\+student} $>$ Students, string \textbf{ file})
+\item 
+{\footnotesize template$<$class T $>$ }\\void \textbf{ read\+Selected\+File} (T \&Students, string file\+Size)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \textbf{ automated} (T \&Students, int file\+Size, double \&time\+Ellapsed, double \&benchmarking)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \textbf{ sort\+Into\+Categories\+Using\+Two\+Containers} (T \&Students, T \&kietiakai, T \&vargsiukai)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \textbf{ sort\+Into\+Categories} (T \&Students, T \&vargsiukai)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \textbf{ write\+To\+File} (T \&arr, std\+::ostream \&output)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \textbf{ output\+To\+File} (T \&a, T \&b, char container[$\,$], string file\+Size, double \&benchmarking)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \textbf{ file} [$\,$] = \char`\"{}kursiokai.\+txt\char`\"{}
+\item 
+const char \textbf{ output\+File} [$\,$] = \char`\"{}output.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{main_8hpp_ac6996eafbd7c8cc140f69bee042c30c4}} 
+\index{main.hpp@{main.hpp}!\_check@{\_check}}
+\index{\_check@{\_check}!main.hpp@{main.hpp}}
+\doxysubsubsection{\_check()}
+{\footnotesize\ttfamily bool \+\_\+check (\begin{DoxyParamCaption}\item[{\textbf{ \+\_\+student} \&}]{a,  }\item[{\textbf{ \+\_\+student} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_acba84033bcc7a2b17f1ba0e9b0ec8966}} 
+\index{main.hpp@{main.hpp}!\_checkAvg@{\_checkAvg}}
+\index{\_checkAvg@{\_checkAvg}!main.hpp@{main.hpp}}
+\doxysubsubsection{\_checkAvg()}
+{\footnotesize\ttfamily bool \+\_\+check\+Avg (\begin{DoxyParamCaption}\item[{\textbf{ \+\_\+student} \&}]{a,  }\item[{\textbf{ \+\_\+student} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_afd502d70735c46b1ea479b2bdc29851a}} 
+\index{main.hpp@{main.hpp}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!main.hpp@{main.hpp}}
+\doxysubsubsection{addStudent()}
+{\footnotesize\ttfamily void add\+Student (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$ \&}]{Students }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_aaa6a501343c171bb8936b05bd865c3c2}} 
+\index{main.hpp@{main.hpp}!automated@{automated}}
+\index{automated@{automated}!main.hpp@{main.hpp}}
+\doxysubsubsection{automated()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void automated (\begin{DoxyParamCaption}\item[{T \&}]{Students,  }\item[{int}]{file\+Size,  }\item[{double \&}]{time\+Ellapsed,  }\item[{double \&}]{benchmarking }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a2d0cefbae65b76d62d711a013e19b940}} 
+\index{main.hpp@{main.hpp}!calcAvg@{calcAvg}}
+\index{calcAvg@{calcAvg}!main.hpp@{main.hpp}}
+\doxysubsubsection{calcAvg()}
+{\footnotesize\ttfamily double calc\+Avg (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{hw,  }\item[{int}]{egz }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_af8a991478a41571841d890e769f5fe80}} 
+\index{main.hpp@{main.hpp}!calcMed@{calcMed}}
+\index{calcMed@{calcMed}!main.hpp@{main.hpp}}
+\doxysubsubsection{calcMed()}
+{\footnotesize\ttfamily double calc\+Med (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{hw }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a4bde48b4e743231f20a69d1dd248df87}} 
+\index{main.hpp@{main.hpp}!checkForInputFiles@{checkForInputFiles}}
+\index{checkForInputFiles@{checkForInputFiles}!main.hpp@{main.hpp}}
+\doxysubsubsection{checkForInputFiles()}
+{\footnotesize\ttfamily void check\+For\+Input\+Files (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{fsizes,  }\item[{double \&}]{time\+Elapsed }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_ade43cf5506e4195a8f75ecdcb915d4ee}} 
+\index{main.hpp@{main.hpp}!checkInput@{checkInput}}
+\index{checkInput@{checkInput}!main.hpp@{main.hpp}}
+\doxysubsubsection{checkInput()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void check\+Input (\begin{DoxyParamCaption}\item[{char \&}]{choice }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a5ca02c6d463971a74fbc907b5e875214}} 
+\index{main.hpp@{main.hpp}!checkInput@{checkInput}}
+\index{checkInput@{checkInput}!main.hpp@{main.hpp}}
+\doxysubsubsection{checkInput()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void check\+Input (\begin{DoxyParamCaption}\item[{int \&}]{input }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_ac44e8dd207d8182a0b95632aa38e39d7}} 
+\index{main.hpp@{main.hpp}!generateDirectories@{generateDirectories}}
+\index{generateDirectories@{generateDirectories}!main.hpp@{main.hpp}}
+\doxysubsubsection{generateDirectories()}
+{\footnotesize\ttfamily void generate\+Directories (\begin{DoxyParamCaption}\item[{std\+::string}]{directory }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_ad79353358e50bd664f1f5e67c564abf5}} 
+\index{main.hpp@{main.hpp}!generateGrades@{generateGrades}}
+\index{generateGrades@{generateGrades}!main.hpp@{main.hpp}}
+\doxysubsubsection{generateGrades()}
+{\footnotesize\ttfamily void generate\+Grades (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{vector$<$ int $>$ \&}]{arr }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_abea16f91036dfc0eb2c058286012cd52}} 
+\index{main.hpp@{main.hpp}!generateInputFile@{generateInputFile}}
+\index{generateInputFile@{generateInputFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{generateInputFile()}
+{\footnotesize\ttfamily void generate\+Input\+File (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a77876d082e4ca7282a3d64f38b76fe2d}} 
+\index{main.hpp@{main.hpp}!outputAvg@{outputAvg}}
+\index{outputAvg@{outputAvg}!main.hpp@{main.hpp}}
+\doxysubsubsection{outputAvg()}
+{\footnotesize\ttfamily void output\+Avg (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$}]{Students,  }\item[{string}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_ab27bec76a263f90ff77e3cab0212e78e}} 
+\index{main.hpp@{main.hpp}!outputMed@{outputMed}}
+\index{outputMed@{outputMed}!main.hpp@{main.hpp}}
+\doxysubsubsection{outputMed()}
+{\footnotesize\ttfamily void output\+Med (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$}]{Students,  }\item[{string}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_af4f9ea1cc08974243cdcc3151ed8d0e4}} 
+\index{main.hpp@{main.hpp}!outputToFile@{outputToFile}}
+\index{outputToFile@{outputToFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{outputToFile()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void output\+To\+File (\begin{DoxyParamCaption}\item[{T \&}]{a,  }\item[{T \&}]{b,  }\item[{char}]{container[$\,$],  }\item[{string}]{file\+Size,  }\item[{double \&}]{benchmarking }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a07a39fbd0948cffc17a2de22789d1328}} 
+\index{main.hpp@{main.hpp}!readFile@{readFile}}
+\index{readFile@{readFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{readFile()}
+{\footnotesize\ttfamily void read\+File (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ \+\_\+student} $>$ \&}]{Students }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_ade7296405a3b47285b41f5221422c0c0}} 
+\index{main.hpp@{main.hpp}!readSelectedFile@{readSelectedFile}}
+\index{readSelectedFile@{readSelectedFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{readSelectedFile()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void read\+Selected\+File (\begin{DoxyParamCaption}\item[{T \&}]{Students,  }\item[{string}]{file\+Size }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_afb484766fb78523e8f8457ad2269c18a}} 
+\index{main.hpp@{main.hpp}!selectFile@{selectFile}}
+\index{selectFile@{selectFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{selectFile()}
+{\footnotesize\ttfamily string select\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a44d0e0e555b037d535130c9effdbc567}} 
+\index{main.hpp@{main.hpp}!sortIntoCategories@{sortIntoCategories}}
+\index{sortIntoCategories@{sortIntoCategories}!main.hpp@{main.hpp}}
+\doxysubsubsection{sortIntoCategories()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void sort\+Into\+Categories (\begin{DoxyParamCaption}\item[{T \&}]{Students,  }\item[{T \&}]{vargsiukai }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_a3310938f9fdee37a010f3f72ddaee84b}} 
+\index{main.hpp@{main.hpp}!sortIntoCategoriesUsingTwoContainers@{sortIntoCategoriesUsingTwoContainers}}
+\index{sortIntoCategoriesUsingTwoContainers@{sortIntoCategoriesUsingTwoContainers}!main.hpp@{main.hpp}}
+\doxysubsubsection{sortIntoCategoriesUsingTwoContainers()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void sort\+Into\+Categories\+Using\+Two\+Containers (\begin{DoxyParamCaption}\item[{T \&}]{Students,  }\item[{T \&}]{kietiakai,  }\item[{T \&}]{vargsiukai }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8hpp_aa2de5a382151a9ce02199d2c83e8ea61}} 
+\index{main.hpp@{main.hpp}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{writeToFile()}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void write\+To\+File (\begin{DoxyParamCaption}\item[{T \&}]{arr,  }\item[{std\+::ostream \&}]{output }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{main_8hpp_a8767d18000783ef973c114fc2e377ee0}} 
+\index{main.hpp@{main.hpp}!file@{file}}
+\index{file@{file}!main.hpp@{main.hpp}}
+\doxysubsubsection{file}
+{\footnotesize\ttfamily const char file[$\,$] = \char`\"{}kursiokai.\+txt\char`\"{}}
+
+\mbox{\label{main_8hpp_a0b00e0d9b221953d6302bfc1ee3266fe}} 
+\index{main.hpp@{main.hpp}!outputFile@{outputFile}}
+\index{outputFile@{outputFile}!main.hpp@{main.hpp}}
+\doxysubsubsection{outputFile}
+{\footnotesize\ttfamily const char output\+File[$\,$] = \char`\"{}output.\+txt\char`\"{}}
+

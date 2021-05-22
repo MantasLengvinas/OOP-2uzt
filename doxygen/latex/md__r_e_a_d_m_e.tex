@@ -1,0 +1,193 @@
+\doxysection{Programos veikimas}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Paleidus programą, vartotojo yra paklausiama ar jis nori pats irašyti duomenis ar visus veiksmus atlikti su failais
+\item Pasirinkus rašyti rankiniu būdu, vartotojo yra prašoma įvesti studento vardą bei pavardę
+\item Tada yra paklausiama ar yra žinomas pažymių skaičius, bei kokiu būdu norima įvesti tuos pažymius (įrašyti ranka arba generuoti atsitiktinai)
+\item Įrašius visus pažymius (įskaitant ir egzamino vertinimą), vartotojui leidžiama pasirinkti ar jis nori pridėti dar vieną studenta
+\item Įrašius norimą kiekį studentų, vartotojas turi galimybę pasirinkti rezultatus\+: vidurkį arba medianą
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+
+\begin{DoxyItemize}
+\item Pasirinkus atlikti veiksmus su failais, vartotojo yra paklausiama ar jis nori generuoti duomenų failus.
+\item Pasirinkus generuoti, vartotojui leidžiama rinktis kuriuos failus nori generuoti
+\item Po failų sukūrimo, vartotojas turi pasirinkti kurį failą jis nori nuskaityti
+\item Galiausiai vartotojui duodamas pasirinkimas pagal ką rūšiuoti studentus \+: vidurkį ar medianą
+\item Tuomet rezultatai yra išvedami į 2 atskirus failus\+: vargšiukai ir kietiakai (kietiakai, kurių vidurkis $>$= 5)
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+\begin{DoxyItemize}
+\item Paleidus programą su pasirinktu konteineriu (parametrai paleidimo metu), visi programos veiksmai bus atlikti automatiškai\+:
+\begin{DoxyItemize}
+\item Programa nustatys ar truksta duomenų failų -\/ jei kurio nors nebus, jį sugeneruos
+\item Praėjus duomenų failų tikrinimą, programa nuskaitys duomenis į pasirinktą konteinerį(arba konteinerius, jei bus įvesti keli konteinerių tipai)
+\item Nuskaitytus duomenis programa išrūšiuoja į kietiakus ir vargšiukus (vargšiukai -\/ studentai, kurių pažymiai $<$ 5)
+\item Galiausiai visi rezultatai būna sulygiuojami ir išvedami į failus
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+{\itshape {\bfseries{Įvedus neegzsituojančio failo pavadinimą, programa parodys klaidos pranešimą ir baigs darbą}}}\doxysection{Programos diegimas bei naudojimas}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Parsisiųskite programos kodą iš {\texttt{ Releases}}
+\item Jei naudojate Linux/\+Mac OS, tai naudokite šias komandas\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{g++ -\/c functions.cpp}
+\DoxyCodeLine{g++ -\/o main main.cpp functions.o}
+\DoxyCodeLine{./main}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+ARBA
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make all}
+\DoxyCodeLine{./main}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Nuo v0.\+5, programą galima paleisti taip\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{g++ -\/c functions.cpp}
+\DoxyCodeLine{g++ -\/o main main.cpp functions.o}
+\DoxyCodeLine{./main \{norimas konteineris (v, d, l)\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Jei naudojate Windows OS, tai naudokite šias komandas\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{g++ -\/c functions.cpp}
+\DoxyCodeLine{g++ -\/o main main.cpp functions.o}
+\DoxyCodeLine{main \{konteineris\}}
+
+\end{DoxyCode}
+ ARBA 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake .}
+\DoxyCodeLine{cmake -\/-\/build .}
+
+\end{DoxyCode}
+
+\item Taip pat programos kodą galima įkelti į jūsų mėgiama IDE (pvz\+: Code\+Blocks) ir tiesiog paleisti kodą
+\end{DoxyItemize}\doxysection{Programos atminties naudojimo ir jos spartos įvertinimas}\label{md__r_e_a_d_m_e_autotoc_md5}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Vector}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Vector}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endhead
+{\bfseries{Atminties naudojimas}}   &&&&&\\\cline{1-6}
+Vieno konteinerio   &0.\+171\+MB   &0.\+691\+MB   &7.\+813\+MB   &77.\+445\+MB   &774.\+184\+MB    \\\cline{1-6}
+Dviejų konteinerių   &0.\+241\+MB   &2.\+714\+MB   &23.\+742\+MB   &263.\+688\+MB   &2297.\+540\+MB    \\\cline{1-6}
+Skirtumas   &0.\+070\+MB   &2.\+023\+MB   &15.\+929\+MB   &186.\+242\+MB   &1523.\+350\+MB    \\\cline{1-6}
+&&&&&\\\cline{1-6}
+{\bfseries{Laiko naudojimas}}   &&&&&\\\cline{1-6}
+Vieno konteinerio   &0.\+004s   &0.\+036s   &0.\+413s   &5.\+188s   &71.\+450s    \\\cline{1-6}
+Dviejų konteinerių   &0.\+002s   &0.\+032s   &0.\+302s   &3.\+918s   &41.\+976s    \\\cline{1-6}
+Skirtumas   &0.\+002s   &0.\+004s   &0.\+111s   &1.\+270s   &22.\+474s   \\\cline{1-6}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\itshape {\bfseries{Deque}}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\itshape {\bfseries{Deque}}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endhead
+{\bfseries{Atminties naudojimas}}   &&&&&\\\cline{1-6}
+Vieno konteinerio   &0.\+113\+MB   &0.\+644\+MB   &8.\+437\+MB   &81.\+683\+MB   &805.\+992\+MB    \\\cline{1-6}
+Dviejų konteinerių   &0.\+125\+MB   &2.\+312\+MB   &22.\+363\+MB   &215.\+238\+MB   &2123.\+81\+MB    \\\cline{1-6}
+Skirtumas   &0.\+011\+MB   &1.\+667\+MB   &13.\+925\+MB   &133.\+555\+MB   &1317.\+820\+MB    \\\cline{1-6}
+&&&&&\\\cline{1-6}
+{\bfseries{Laiko naudojimas}}   &&&&&\\\cline{1-6}
+Vieno konteinerio   &0.\+0023s   &0.\+057s   &0.\+719s   &6.\+222s   &79.\+265s    \\\cline{1-6}
+Dviejų konteinerių   &0.\+0028s   &0.\+043s   &0.\+653s   &5.\+669s   &72.\+471s    \\\cline{1-6}
+Skirtumas   &0.\+0005s   &0.\+014s   &0.\+066s   &0.\+553s   &6.\+794s   \\\cline{1-6}
+\end{longtabu}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\itshape {\bfseries{List}}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\itshape {\bfseries{List}}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endhead
+{\bfseries{Atminties naudojimas}}   &&&&&\\\cline{1-6}
+Vieno konteinerio   &0.\+121\+MB   &0.\+882\+MB   &9.\+476\+MB   &91.\+765\+MB   &902.\+312\+MB    \\\cline{1-6}
+Dviejų konteinerių   &0.\+183\+MB   &2.\+386\+MB   &27.\+488\+MB   &241.\+383\+MB   &2351.\+2\+MB    \\\cline{1-6}
+Skirtumas   &0.\+062\+MB   &1.\+503\+MB   &18.\+011\+MB   &149.\+617\+MB   &1448.\+89\+MB    \\\cline{1-6}
+&&&&&\\\cline{1-6}
+{\bfseries{Laiko naudojimas}}   &&&&&\\\cline{1-6}
+Vieno konteinerio   &0.\+0015s   &0.\+022s   &0.\+255s   &3.\+598s   &51.\+181s    \\\cline{1-6}
+Dviejų konteinerių   &0.\+0011s   &0.\+011s   &0.\+139s   &1.\+498s   &30.\+419s    \\\cline{1-6}
+Skirtumas   &0.\+0004s   &0.\+011s   &0.\+116s   &2.\+100s   &20.\+762s   \\\cline{1-6}
+\end{longtabu}
+\doxysection{Programos spartos įvertinimas realizavus klases}\label{md__r_e_a_d_m_e_autotoc_md6}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\itshape {\bfseries{Vector}}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\itshape {\bfseries{Vector}}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10 000 000    }\\\cline{1-6}
+\endhead
+{\bfseries{Laiko naudojimas}}   &&&&&\\\cline{1-6}
+Struct realizacija   &0.\+011s   &0.\+123s   &1.\+113s   &11.\+210s   &96.\+666s    \\\cline{1-6}
+Class (Įprastas kompiliavimas)   &0.\+006s   &0.\+081s   &0.\+808s   &8.\+879s   &93.\+243s    \\\cline{1-6}
+Class (-\/O1 vėliavėlė)   &0.\+004s   &0.\+055s   &0.\+559s   &6.\+260s   &61.\+058s    \\\cline{1-6}
+Class (-\/O2 vėliavėlė)   &0.\+005s   &0.\+061s   &0.\+609s   &6.\+150s   &60.\+560s    \\\cline{1-6}
+Class (-\/O3 vėliavėlė)   &0.\+008s   &0.\+094s   &1.\+077s   &9.\+272s   &71.\+188s   \\\cline{1-6}
+\end{longtabu}
+
+
+
+\begin{DoxyItemize}
+\item Procesorius\+: Intel Core I5-\/9300H, 2.\+4 GHz
+\item RAM\+: 8GB DDR4 2400MHz
+\item SSD\+: NVMe M.\+2
+\end{DoxyItemize}\doxysection{Versijos}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item {\texttt{ v0.\+1}} Įvykdyti v0.\+1 reikalavimai
+\item {\texttt{ v0.\+2}} Įvykdyti v0.\+2 reikalavimai -\/ galimybė skaityti iš failo
+\item {\texttt{ v0.\+3}} Įvykdyti v0.\+3 reikalavimai -\/ įdėti try catch blokai, programa išskaidyta į atskirus failus
+\item {\texttt{ v0.\+4}} Įvykdyti v0.\+4 reikalavimai -\/ failų generavimas, laiko analizė, studentų skirstymas pagal galutinį balą
+\item {\texttt{ v0.\+5}} Įvykdyti v0.\+5 reikalavimai -\/ programa gali saugoi duomenys 3 skirtinguose konteineriuose\+: list, deque ir vector
+\item {\texttt{ v1.\+0}} Įvykdyti v1.\+0 reikalavimai -\/ įdėtas partition optimizavimas, padaryti memory testai, bei sukurti makefile
+\item {\texttt{ v1.\+1}} Įvykdyti v1.\+1 reikalavimai -\/ struktūros pakeistos klasėmis
+\item {\texttt{ v1.\+2}} Įvykdyti v1.\+2 reikalavimai -\/ implementuota rule of three
+\item {\texttt{ v1.\+5}} Įvykdyti v1.\+5 reikalavimai -\/ sukurta bazinė klasė person, kuri yra abstrakti
+\item {\texttt{ v2.\+0}} Įvykdyti v2.\+0 reikalavimai -\/ Atlikti unit testai, sukurta doxygen dokumentacija 
+\end{DoxyItemize}

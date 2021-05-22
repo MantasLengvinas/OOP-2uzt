@@ -1,0 +1,27 @@
+var main_8hpp =
+[
+    [ "_checkIfWinner", "struct__check_if_winner.html", "struct__check_if_winner" ],
+    [ "_check", "main_8hpp.html#ac6996eafbd7c8cc140f69bee042c30c4", null ],
+    [ "_checkAvg", "main_8hpp.html#acba84033bcc7a2b17f1ba0e9b0ec8966", null ],
+    [ "addStudent", "main_8hpp.html#afd502d70735c46b1ea479b2bdc29851a", null ],
+    [ "automated", "main_8hpp.html#aaa6a501343c171bb8936b05bd865c3c2", null ],
+    [ "calcAvg", "main_8hpp.html#a2d0cefbae65b76d62d711a013e19b940", null ],
+    [ "calcMed", "main_8hpp.html#af8a991478a41571841d890e769f5fe80", null ],
+    [ "checkForInputFiles", "main_8hpp.html#a4bde48b4e743231f20a69d1dd248df87", null ],
+    [ "checkInput", "main_8hpp.html#ade43cf5506e4195a8f75ecdcb915d4ee", null ],
+    [ "checkInput", "main_8hpp.html#a5ca02c6d463971a74fbc907b5e875214", null ],
+    [ "generateDirectories", "main_8hpp.html#ac44e8dd207d8182a0b95632aa38e39d7", null ],
+    [ "generateGrades", "main_8hpp.html#ad79353358e50bd664f1f5e67c564abf5", null ],
+    [ "generateInputFile", "main_8hpp.html#abea16f91036dfc0eb2c058286012cd52", null ],
+    [ "outputAvg", "main_8hpp.html#a77876d082e4ca7282a3d64f38b76fe2d", null ],
+    [ "outputMed", "main_8hpp.html#ab27bec76a263f90ff77e3cab0212e78e", null ],
+    [ "outputToFile", "main_8hpp.html#af4f9ea1cc08974243cdcc3151ed8d0e4", null ],
+    [ "readFile", "main_8hpp.html#a07a39fbd0948cffc17a2de22789d1328", null ],
+    [ "readSelectedFile", "main_8hpp.html#ade7296405a3b47285b41f5221422c0c0", null ],
+    [ "selectFile", "main_8hpp.html#afb484766fb78523e8f8457ad2269c18a", null ],
+    [ "sortIntoCategories", "main_8hpp.html#a44d0e0e555b037d535130c9effdbc567", null ],
+    [ "sortIntoCategoriesUsingTwoContainers", "main_8hpp.html#a3310938f9fdee37a010f3f72ddaee84b", null ],
+    [ "writeToFile", "main_8hpp.html#aa2de5a382151a9ce02199d2c83e8ea61", null ],
+    [ "file", "main_8hpp.html#a8767d18000783ef973c114fc2e377ee0", null ],
+    [ "outputFile", "main_8hpp.html#a0b00e0d9b221953d6302bfc1ee3266fe", null ]
+];

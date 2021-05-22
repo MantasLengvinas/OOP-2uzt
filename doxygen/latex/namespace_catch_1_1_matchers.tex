@@ -1,0 +1,181 @@
+\doxysection{Catch\+::Matchers Namespace Reference}
+\label{namespace_catch_1_1_matchers}\index{Catch::Matchers@{Catch::Matchers}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \textbf{ Exception}
+\item 
+ \textbf{ Floating}
+\item 
+ \textbf{ Generic}
+\item 
+ \textbf{ Impl}
+\item 
+ \textbf{ Std\+String}
+\item 
+ \textbf{ Vector}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Exception\+::\+Exception\+Message\+Matcher} \textbf{ Message} (std\+::string const \&message)
+\item 
+\textbf{ Floating\+::\+Within\+Ulps\+Matcher} \textbf{ Within\+ULP} (double target, uint64\+\_\+t max\+Ulp\+Diff)
+\item 
+\textbf{ Floating\+::\+Within\+Ulps\+Matcher} \textbf{ Within\+ULP} (float target, uint64\+\_\+t max\+Ulp\+Diff)
+\item 
+\textbf{ Floating\+::\+Within\+Abs\+Matcher} \textbf{ Within\+Abs} (double target, double margin)
+\item 
+\textbf{ Floating\+::\+Within\+Rel\+Matcher} \textbf{ Within\+Rel} (double target, double eps)
+\item 
+\textbf{ Floating\+::\+Within\+Rel\+Matcher} \textbf{ Within\+Rel} (double target)
+\item 
+\textbf{ Floating\+::\+Within\+Rel\+Matcher} \textbf{ Within\+Rel} (float target, float eps)
+\item 
+\textbf{ Floating\+::\+Within\+Rel\+Matcher} \textbf{ Within\+Rel} (float target)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\textbf{ Generic\+::\+Predicate\+Matcher}$<$ T $>$ \textbf{ Predicate} (std\+::function$<$ bool(T const \&)$>$ const \&predicate, std\+::string const \&description=\char`\"{}\char`\"{})
+\item 
+\textbf{ Std\+String\+::\+Equals\+Matcher} \textbf{ Equals} (std\+::string const \&str, \textbf{ Case\+Sensitive\+::\+Choice} case\+Sensitivity=\textbf{ Case\+Sensitive\+::\+Yes})
+\item 
+\textbf{ Std\+String\+::\+Contains\+Matcher} \textbf{ Contains} (std\+::string const \&str, \textbf{ Case\+Sensitive\+::\+Choice} case\+Sensitivity=\textbf{ Case\+Sensitive\+::\+Yes})
+\item 
+\textbf{ Std\+String\+::\+Ends\+With\+Matcher} \textbf{ Ends\+With} (std\+::string const \&str, \textbf{ Case\+Sensitive\+::\+Choice} case\+Sensitivity=\textbf{ Case\+Sensitive\+::\+Yes})
+\item 
+\textbf{ Std\+String\+::\+Starts\+With\+Matcher} \textbf{ Starts\+With} (std\+::string const \&str, \textbf{ Case\+Sensitive\+::\+Choice} case\+Sensitivity=\textbf{ Case\+Sensitive\+::\+Yes})
+\item 
+\textbf{ Std\+String\+::\+Regex\+Matcher} \textbf{ Matches} (std\+::string const \&regex, \textbf{ Case\+Sensitive\+::\+Choice} case\+Sensitivity=\textbf{ Case\+Sensitive\+::\+Yes})
+\item 
+{\footnotesize template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ }\\\textbf{ Vector\+::\+Contains\+Matcher}$<$ T, Alloc\+Comp, Alloc\+Match $>$ \textbf{ Contains} (std\+::vector$<$ T, Alloc\+Comp $>$ const \&comparator)
+\item 
+{\footnotesize template$<$typename T , typename Alloc  = std\+::allocator$<$\+T$>$$>$ }\\\textbf{ Vector\+::\+Contains\+Element\+Matcher}$<$ T, Alloc $>$ \textbf{ Vector\+Contains} (T const \&comparator)
+\item 
+{\footnotesize template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ }\\\textbf{ Vector\+::\+Equals\+Matcher}$<$ T, Alloc\+Comp, Alloc\+Match $>$ \textbf{ Equals} (std\+::vector$<$ T, Alloc\+Comp $>$ const \&comparator)
+\item 
+{\footnotesize template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ }\\\textbf{ Vector\+::\+Approx\+Matcher}$<$ T, Alloc\+Comp, Alloc\+Match $>$ \textbf{ Approx} (std\+::vector$<$ T, Alloc\+Comp $>$ const \&comparator)
+\item 
+{\footnotesize template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ }\\\textbf{ Vector\+::\+Unordered\+Equals\+Matcher}$<$ T, Alloc\+Comp, Alloc\+Match $>$ \textbf{ Unordered\+Equals} (std\+::vector$<$ T, Alloc\+Comp $>$ const \&target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{namespace_catch_1_1_matchers_ae706084b5987a683e0eecb79a18d7da9}} 
+\index{Catch::Matchers@{Catch::Matchers}!Approx@{Approx}}
+\index{Approx@{Approx}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Approx()}
+{\footnotesize\ttfamily template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ \\
+\textbf{ Vector\+::\+Approx\+Matcher}$<$T, Alloc\+Comp, Alloc\+Match$>$ Catch\+::\+Matchers\+::\+Approx (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T, Alloc\+Comp $>$ const \&}]{comparator }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a1f6c2accdc6cd75a84d7112dcad647b4}} 
+\index{Catch::Matchers@{Catch::Matchers}!Contains@{Contains}}
+\index{Contains@{Contains}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Contains()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Std\+String\+::\+Contains\+Matcher} Catch\+::\+Matchers\+::\+Contains (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str,  }\item[{\textbf{ Case\+Sensitive\+::\+Choice}}]{case\+Sensitivity = {\ttfamily \textbf{ Case\+Sensitive\+::\+Yes}} }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a6016aefc79a29573e7bd540c40a0f4dc}} 
+\index{Catch::Matchers@{Catch::Matchers}!Contains@{Contains}}
+\index{Contains@{Contains}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Contains()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ \\
+\textbf{ Vector\+::\+Contains\+Matcher}$<$T, Alloc\+Comp, Alloc\+Match$>$ Catch\+::\+Matchers\+::\+Contains (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T, Alloc\+Comp $>$ const \&}]{comparator }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_ae5a45efb4538c57c43e04f3f9043ad6e}} 
+\index{Catch::Matchers@{Catch::Matchers}!EndsWith@{EndsWith}}
+\index{EndsWith@{EndsWith}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{EndsWith()}
+{\footnotesize\ttfamily \textbf{ Std\+String\+::\+Ends\+With\+Matcher} Catch\+::\+Matchers\+::\+Ends\+With (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str,  }\item[{\textbf{ Case\+Sensitive\+::\+Choice}}]{case\+Sensitivity = {\ttfamily \textbf{ Case\+Sensitive\+::\+Yes}} }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_af8af7dfc338335ed4c788cb1b37fc59f}} 
+\index{Catch::Matchers@{Catch::Matchers}!Equals@{Equals}}
+\index{Equals@{Equals}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Equals()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Std\+String\+::\+Equals\+Matcher} Catch\+::\+Matchers\+::\+Equals (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str,  }\item[{\textbf{ Case\+Sensitive\+::\+Choice}}]{case\+Sensitivity = {\ttfamily \textbf{ Case\+Sensitive\+::\+Yes}} }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a3ab7fff821bc655bd4875cc1aa745101}} 
+\index{Catch::Matchers@{Catch::Matchers}!Equals@{Equals}}
+\index{Equals@{Equals}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Equals()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ \\
+\textbf{ Vector\+::\+Equals\+Matcher}$<$T, Alloc\+Comp, Alloc\+Match$>$ Catch\+::\+Matchers\+::\+Equals (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T, Alloc\+Comp $>$ const \&}]{comparator }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a82f1893cf50ae4c14b9b3e0980bf22b8}} 
+\index{Catch::Matchers@{Catch::Matchers}!Matches@{Matches}}
+\index{Matches@{Matches}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Matches()}
+{\footnotesize\ttfamily \textbf{ Std\+String\+::\+Regex\+Matcher} Catch\+::\+Matchers\+::\+Matches (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{regex,  }\item[{\textbf{ Case\+Sensitive\+::\+Choice}}]{case\+Sensitivity = {\ttfamily \textbf{ Case\+Sensitive\+::\+Yes}} }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a0fcd8bd126bb510a6bb99e6360aa270a}} 
+\index{Catch::Matchers@{Catch::Matchers}!Message@{Message}}
+\index{Message@{Message}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Message()}
+{\footnotesize\ttfamily \textbf{ Exception\+::\+Exception\+Message\+Matcher} Catch\+::\+Matchers\+::\+Message (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{message }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a034f2de6c0aac6f4a662fdf2558aedce}} 
+\index{Catch::Matchers@{Catch::Matchers}!Predicate@{Predicate}}
+\index{Predicate@{Predicate}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{Predicate()}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\textbf{ Generic\+::\+Predicate\+Matcher}$<$T$>$ Catch\+::\+Matchers\+::\+Predicate (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(T const \&)$>$ const \&}]{predicate,  }\item[{std\+::string const \&}]{description = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a97c9ee09a70378ca7e8c6f9f01b0d6d1}} 
+\index{Catch::Matchers@{Catch::Matchers}!StartsWith@{StartsWith}}
+\index{StartsWith@{StartsWith}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{StartsWith()}
+{\footnotesize\ttfamily \textbf{ Std\+String\+::\+Starts\+With\+Matcher} Catch\+::\+Matchers\+::\+Starts\+With (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{str,  }\item[{\textbf{ Case\+Sensitive\+::\+Choice}}]{case\+Sensitivity = {\ttfamily \textbf{ Case\+Sensitive\+::\+Yes}} }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_aa1955107efa02ee9e0a9f2db9c160f1f}} 
+\index{Catch::Matchers@{Catch::Matchers}!UnorderedEquals@{UnorderedEquals}}
+\index{UnorderedEquals@{UnorderedEquals}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{UnorderedEquals()}
+{\footnotesize\ttfamily template$<$typename T , typename Alloc\+Comp  = std\+::allocator$<$\+T$>$, typename Alloc\+Match  = Alloc\+Comp$>$ \\
+\textbf{ Vector\+::\+Unordered\+Equals\+Matcher}$<$T, Alloc\+Comp, Alloc\+Match$>$ Catch\+::\+Matchers\+::\+Unordered\+Equals (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T, Alloc\+Comp $>$ const \&}]{target }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a95520b036d439e75aa9dcbe4ffa20188}} 
+\index{Catch::Matchers@{Catch::Matchers}!VectorContains@{VectorContains}}
+\index{VectorContains@{VectorContains}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{VectorContains()}
+{\footnotesize\ttfamily template$<$typename T , typename Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\textbf{ Vector\+::\+Contains\+Element\+Matcher}$<$T, Alloc$>$ Catch\+::\+Matchers\+::\+Vector\+Contains (\begin{DoxyParamCaption}\item[{T const \&}]{comparator }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a4c9ea76d47d02de0cf2d354c87c26e95}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinAbs@{WithinAbs}}
+\index{WithinAbs@{WithinAbs}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinAbs()}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Abs\+Matcher} Catch\+::\+Matchers\+::\+Within\+Abs (\begin{DoxyParamCaption}\item[{double}]{target,  }\item[{double}]{margin }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a46e2f1efab13b85e2cbe36958a27d518}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinRel@{WithinRel}}
+\index{WithinRel@{WithinRel}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinRel()\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Rel\+Matcher} Catch\+::\+Matchers\+::\+Within\+Rel (\begin{DoxyParamCaption}\item[{double}]{target }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a0c559d9cfda02a81941ad6933f4ca450}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinRel@{WithinRel}}
+\index{WithinRel@{WithinRel}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinRel()\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Rel\+Matcher} Catch\+::\+Matchers\+::\+Within\+Rel (\begin{DoxyParamCaption}\item[{double}]{target,  }\item[{double}]{eps }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a18cfb571dd191377674bad0cbb50078e}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinRel@{WithinRel}}
+\index{WithinRel@{WithinRel}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinRel()\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Rel\+Matcher} Catch\+::\+Matchers\+::\+Within\+Rel (\begin{DoxyParamCaption}\item[{float}]{target }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a494b4c8c68ac883e29dc35da71a4cd72}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinRel@{WithinRel}}
+\index{WithinRel@{WithinRel}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinRel()\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Rel\+Matcher} Catch\+::\+Matchers\+::\+Within\+Rel (\begin{DoxyParamCaption}\item[{float}]{target,  }\item[{float}]{eps }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_ae77e233c3ed735ea12b7c726153798d1}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinULP@{WithinULP}}
+\index{WithinULP@{WithinULP}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinULP()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Ulps\+Matcher} Catch\+::\+Matchers\+::\+Within\+ULP (\begin{DoxyParamCaption}\item[{double}]{target,  }\item[{uint64\+\_\+t}]{max\+Ulp\+Diff }\end{DoxyParamCaption})}
+
+\mbox{\label{namespace_catch_1_1_matchers_a5d108ff6aaeac40f20f4978dfb3f51fc}} 
+\index{Catch::Matchers@{Catch::Matchers}!WithinULP@{WithinULP}}
+\index{WithinULP@{WithinULP}!Catch::Matchers@{Catch::Matchers}}
+\doxysubsubsection{WithinULP()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \textbf{ Floating\+::\+Within\+Ulps\+Matcher} Catch\+::\+Matchers\+::\+Within\+ULP (\begin{DoxyParamCaption}\item[{float}]{target,  }\item[{uint64\+\_\+t}]{max\+Ulp\+Diff }\end{DoxyParamCaption})}
+

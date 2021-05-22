@@ -17,11 +17,18 @@
   * Galiausiai vartotojui duodamas pasirinkimas pagal ką rūšiuoti studentus : vidurkį ar medianą
 
   * Tuomet rezultatai yra išvedami į 2 atskirus failus: vargšiukai ir kietiakai (kietiakai, kurių vidurkis >= 5)
+
+  --------------------------------------------------------------------------------------------------------
+  * Paleidus programą su pasirinktu konteineriu (parametrai paleidimo metu), visi programos veiksmai bus atlikti automatiškai:
+    - Programa nustatys ar truksta duomenų failų - jei kurio nors nebus, jį sugeneruos
+    - Praėjus duomenų failų tikrinimą, programa nuskaitys duomenis į pasirinktą konteinerį(arba konteinerius, jei bus įvesti keli konteinerių tipai)
+    - Nuskaitytus duomenis programa išrūšiuoja į kietiakus ir vargšiukus (vargšiukai - studentai, kurių pažymiai < 5)
+    - Galiausiai visi rezultatai būna sulygiuojami ir išvedami į failus
   
   ***Įvedus neegzsituojančio failo pavadinimą, programa parodys klaidos pranešimą ir baigs darbą***
 
 ## Programos diegimas bei naudojimas
-* Parsisiųskite programos kodą iš [Releases](https://github.com/MantasLengvinas/OOP-2-uzt/releases)
+* Parsisiųskite programos kodą iš [Releases](https://github.com/MantasLengvinas/OOP-2uzt/releases)
 * Jei naudojate Linux/Mac OS, tai naudokite šias komandas: 
 ```bash
 
@@ -34,7 +41,8 @@
 ARBA
 
 ```bash
-  make makefile all
+  make all
+  ./main
 ```
 
 * Nuo v0.5, programą galima paleisti taip:
@@ -50,7 +58,7 @@ ARBA
 
     g++ -c functions.cpp
     g++ -o main main.cpp functions.o
-    main
+    main {konteineris}
 
 ```
 ARBA
@@ -123,3 +131,5 @@ ARBA
   * [v1.0](https://github.com/MantasLengvinas/OOP-2-uzt/releases/tag/v1.0) Įvykdyti v1.0 reikalavimai - įdėtas partition optimizavimas, padaryti memory testai, bei sukurti makefile
   * [v1.1](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v1.1) Įvykdyti v1.1 reikalavimai - struktūros pakeistos klasėmis
   * [v1.2](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v1.2) Įvykdyti v1.2 reikalavimai - implementuota rule of three
+  * [v1.5](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v1.5) Įvykdyti v1.5 reikalavimai - sukurta bazinė klasė person, kuri yra abstrakti
+  * [v2.0](https://github.com/MantasLengvinas/OOP-2uzt/releases/tag/v2.0) Įvykdyti v2.0 reikalavimai - Atlikti unit testai, sukurta doxygen dokumentacija
