@@ -28,6 +28,7 @@ using std::vector;
 
 #include "Person.hpp"
 #include "Student.hpp"
+#include "catch.hpp"
 
 const char file[] = "kursiokai.txt"; //Duomenu failo pavadinimas
 const char outputFile[] = "output.txt"; //Rezultatu failo pavadinimas

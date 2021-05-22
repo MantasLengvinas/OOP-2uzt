@@ -51,7 +51,7 @@ class _student : public Person {
         inline double getAvg() const { return finalAvg; }
         inline double getMed() const { return finalMed; }
         inline void setExam(int exam) { _student::exam = exam; }
-        inline void addNd(int grade) { hw.push_back(grade); }
+        inline void setOneHw(int grade) { hw.push_back(grade); }
         inline void setHw(std::vector<int> hw) { _student::hw = hw; }
         inline void setAvg(double vid) { _student::finalAvg = vid; }
         inline void setMed(double med) { _student::finalMed = med; }
